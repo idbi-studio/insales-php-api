@@ -1,7 +1,7 @@
 {
     "name": "idbi-studio/insales-php-api",
     "description": "PHP client for InSales API",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "type": "library",
     "keywords": [
         "API",
@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "InsalesApi\\": "src/"
+            "": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "InsalesApi\\Tests\\": "tests/"
+            "": "tests/"
         }
     },
     "config": {

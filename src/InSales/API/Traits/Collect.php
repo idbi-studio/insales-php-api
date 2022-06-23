@@ -45,6 +45,21 @@ trait Collect
     }
 
     /**
+     * Получение товаров в коллекции
+     * @param int $collectionId
+     * @return ApiResponse
+     */
+    public function getProductsByCollection(int $collectionId) : ApiResponse
+    {
+        return $this->client->executeListRequest(
+            $this->generateUrl(self::API_URL_COLLECTS),
+            [
+                'collection_id' => $collectionId,
+            ]
+        );
+    }
+
+    /**
      * Обновление связки коллекции и товара
      * @param int $id
      * @param array $data
