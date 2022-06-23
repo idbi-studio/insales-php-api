@@ -1,7 +1,7 @@
 {
     "name": "idbi-studio/insales-php-api",
     "description": "PHP client for InSales API",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "type": "library",
     "keywords": [
         "API",
@@ -15,15 +15,14 @@
             "email": "vasily@liven-mv.ru"
         }
     ],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
     "require": {
         "php": ">=7.4.0",
         "ext-curl": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5"
-    },
-    "support": {
-        "email": "support@insales.ru"
     },
     "autoload": {
         "psr-4": {
@@ -34,5 +33,15 @@
         "psr-4": {
             "InsalesApi\\Tests\\": "tests/"
         }
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true
+        },
+        "optimize-autoloader": true,
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true
     }
 }
