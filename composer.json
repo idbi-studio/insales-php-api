@@ -1,5 +1,5 @@
 {
-    "name": "idbi-studio/insales_php_api",
+    "name": "idbi-studio/insales-php-api",
     "description": "PHP client for InSales API",
     "version": "0.1.0",
     "type": "library",
