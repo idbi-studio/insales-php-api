@@ -27,6 +27,7 @@ use InSales\API\Traits\{Account,
     OptionName,
     OptionValue,
     Order,
+    Page,
     Product,
     ProductField,
     ProductFieldValue,
@@ -60,6 +61,7 @@ class ApiClient
         Image, InvitedAccount,
         JsTags,
         OptionName, OptionValue,
+        Page,
         Product, Property, PaymentGateway, PropertyCharacteristic, ProductField, ProductFieldValue,
         Review,
         Similar, StockCurrency, Supplementary,
@@ -79,6 +81,7 @@ class ApiClient
     const API_URL_CLIENT = '/admin/clients';
     const API_URL_CLIENT_GROUP = '/admin/client_groups';
     const API_URL_ORDERS = '/admin/orders';
+    const API_URL_PAGES = '/admin/pages';
     const API_URL_PRODUCTS = '/admin/products';
     const API_URL_PRODUCTS_COUNT = '/admin/products/count';
     const API_URL_CUSTOM_STATUSES = '/admin/custom_statuses';
