@@ -28,11 +28,15 @@ trait Article
     /**
      * Получение статей блога
      * @param integer $blogId Идентификатор блога
+     * @param array $params Параметры запроса
      * @return ApiResponse
      */
-    public function getArticles(int $blogId) : ApiResponse
+    public function getArticles(int $blogId, $params = []) : ApiResponse
     {
-        return $this->client->executeListRequest($this->generateCompoundUrl(self::API_URL_ARTICLE, $blogId));
+        return $this->client->executeListRequest(
+            $this->generateCompoundUrl(self::API_URL_ARTICLE, $blogId),
+            $params
+        );
     }
 
     /**
