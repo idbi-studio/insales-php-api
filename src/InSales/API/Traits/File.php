@@ -52,12 +52,14 @@ trait File
 
     /**
      * Получение списка файлов
+     * @param array $params Параметры запроса
      * @return ApiResponse
      */
-    public function getFiles() : ApiResponse
+    public function getFiles($params = []) : ApiResponse
     {
         return $this->client->executeListRequest(
-            $this->generateUrl(self::API_URL_FILES)
+            $this->generateUrl(self::API_URL_FILES),
+            $params
         );
     }
 
